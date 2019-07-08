@@ -1,0 +1,170 @@
+.items-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.item-check {
+  display: flex;
+  align-items: center;
+  margin: 0 18px;
+}
+
+.item-check:hover {
+  cursor: pointer;
+}
+
+.item-check i {
+  font-size: 70px;
+  color: gray;
+}
+
+.item-check i.active {
+  color: #ee8d38;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  border-radius: 50px;
+  color: #cbcbcb;
+  font-weight: bold;
+  padding: 5px 40px;
+}
+
+.item hr {
+  height: 70%;
+  align-self: center;
+  border-left: 1px solid #f2f2f2;
+}
+
+.item-date {
+  flex: 0.1;
+  align-self: center;
+  text-align: center;
+}
+
+.item-route {
+  flex: 0.3;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.item-route .item-route-arrow-icon {
+  align-self: center;
+}
+
+.item-route .item-route-arrow-icon i {
+  font-size: 40px;
+}
+
+.item-route .item-route-localization {
+  align-self: center;
+  text-align: center;
+}
+
+.item-route .item-route-localization p {
+  margin: 5px;
+}
+
+.item-route .item-route-localization i {
+  font-size: 50px;
+  color: #eaa75d;
+  transform: rotate(180deg);
+}
+
+.item-price {
+  flex: 0.5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3px;
+  color: #858585;
+}
+
+.item-price .fa-truck {
+  font-size: 80px;
+  margin-right: 20px;
+}
+
+.item-price p {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.item-price .price-many-trucks {
+  width: 40px;
+  height: 40px;
+  background-color: #ed5356;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  color: #cbcbcb;
+}
+
+.item-price .price-many-trucks span {
+  font-size: 10px;
+}
+
+.item-price .dropdown {
+  position: relative;
+  outline: 0;
+}
+
+.item-price .dropdown .toggle {
+  padding: 10px;
+}
+
+.item-price .dropdown .toggle:hover {
+  cursor: pointer;
+}
+
+.item-price .dropdown .toggle i {
+  font-size: 30px;
+}
+
+.item-price .dropdown .dropdown-items {
+  background-color: white;
+  position: absolute;
+  right: 18px;
+  top: 25px;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.item-price .dropdown .dropdown-items ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item-price .dropdown .dropdown-items ul li {
+  cursor: pointer;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.item-price .dropdown .dropdown-items ul li:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.item-price .dropdown .dropdown-items ul li i {
+  font-size: 20px;
+}
+
+.item-price .dropdown .dropdown-items ul li span {
+  margin-left: 10px;
+}
+
+.item-price .dropdown .dropdown-items.active {
+  width: 150px;
+  height: auto;
+}

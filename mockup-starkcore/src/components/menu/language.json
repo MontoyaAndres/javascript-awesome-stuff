@@ -1,0 +1,14 @@
+{
+  "es": {
+    "MENU_ITEMS": [
+      "Inicio",
+      "Mensajes",
+      "Lista de favoritos",
+      "Configuración",
+      "Mi cuenta"
+    ]
+  },
+  "en": {
+    "MENU_ITEMS": ["Home", "Messages", "Whishlist", "Settings", "My Account"]
+  }
+}

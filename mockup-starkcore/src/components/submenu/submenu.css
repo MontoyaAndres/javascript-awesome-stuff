@@ -1,0 +1,63 @@
+.submenu {
+  padding: 40px 35px 0px 35px;
+  text-align: center;
+}
+
+.submenu-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.submenu-filters {
+  padding-bottom: 20px;
+}
+
+.submenu-filters .submenu-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.submenu-filters .submenu-filter i {
+  font-size: 60px;
+  color: #686868;
+}
+
+.submenu-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.submenu-footer .submenu-footer-title {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.submenu-footer-search-input input {
+  margin-bottom: 15px;
+  padding: 15px 0;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  font-family: Arial, FontAwesome;
+  font-size: 13px;
+  box-sizing: border-box;
+  max-width: 500px;
+  width: 100%;
+}
+
+.submenu-footer .submenu-footer-button {
+  margin: 10px 0;
+  padding: 15px 0;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 20px;
+  background-color: white;
+}
+
+.submenu-footer .submenu-footer-button:hover {
+  cursor: pointer;
+}

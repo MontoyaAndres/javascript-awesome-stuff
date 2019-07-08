@@ -1,0 +1,58 @@
+{
+  "es": {
+    "NOT_FOUNT_ITEMS": "Items not found",
+    "EDIT_TEXT": "EDITAR",
+    "DELETE_TEXT": "ELIMINAR",
+    "DAYS": [
+      "Lunes",
+      "Martes",
+      "Miercoles",
+      "Jueves",
+      "Viernes",
+      "Sabado",
+      "Domingo"
+    ],
+    "MONTHS": [
+      "Enero",
+      "Febrero",
+      "Marzo",
+      "Abril",
+      "Mayo",
+      "Junio",
+      "Julio",
+      "Agosto",
+      "Septiembre",
+      "Octubre",
+      "Noviembre",
+      "Diciembre"
+    ]
+  },
+  "en": {
+    "NOT_FOUNT_ITEMS": "Items no encontrados",
+    "EDIT_TEXT": "EDIT",
+    "DELETE_TEXT": "DELETE",
+    "DAYS": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "MONTHS": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ]
+  }
+}

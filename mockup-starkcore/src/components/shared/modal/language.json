@@ -1,0 +1,22 @@
+{
+  "es": {
+    "MODAL_TITLE": "ITEMS",
+    "MODAL_INPUT_DATE": "Fecha",
+    "MODAL_INPUT_TIME": "Hora",
+    "MODAL_INPUT_FROM": "Destinación desde",
+    "MODAL_INPUT_TO": "Destinación a",
+    "MODAL_INPUT_PRICE": "Precio",
+    "MODAL_INPUT_TRUCKS": "¿Cuántos camiones?",
+    "MODAL_BUTTON_TEXT": "SAVE ITEM"
+  },
+  "en": {
+    "MODAL_TITLE": "ITEMS",
+    "MODAL_INPUT_DATE": "Date",
+    "MODAL_INPUT_TIME": "Time",
+    "MODAL_INPUT_FROM": "Destination from",
+    "MODAL_INPUT_TO": "Destination to",
+    "MODAL_INPUT_PRICE": "Price",
+    "MODAL_INPUT_TRUCKS": "How many trucks?",
+    "MODAL_BUTTON_TEXT": "SAVE ITEM"
+  }
+}

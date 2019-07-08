@@ -1,0 +1,12 @@
+{
+  "es": {
+    "SUBMENU_TITLE": "Filtros Inteligentes",
+    "SUBMENU_FOOTER_TITLE": "Estados",
+    "SUBMENU_FOOTER_BUTTON_TEXT": "Traducir"
+  },
+  "en": {
+    "SUBMENU_TITLE": "Smart Filters",
+    "SUBMENU_FOOTER_TITLE": "Status",
+    "SUBMENU_FOOTER_BUTTON_TEXT": "Translate"
+  }
+}

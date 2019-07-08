@@ -1,0 +1,36 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f0f0f0;
+}
+
+.app {
+  background-color: #e6e6e6;
+  margin: 15px 20px;
+  padding: 1.5em;
+  display: flex;
+}
+
+.app-1 {
+  width: 20%;
+}
+
+.app-2 {
+  width: 80%;
+}
+
+.float-button {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 40px;
+  right: 20px;
+  background-color: #ee8d38;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.float-button:active {
+  transform: translateY(4px);
+}
