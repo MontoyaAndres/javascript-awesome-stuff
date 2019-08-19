@@ -18,11 +18,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
-      <img
-        src="https://qph.fs.quoracdn.net/main-qimg-bd82164d44d1c2efb777593fd6ceb166"
-        width="112"
-        height="58"
-        alt="" />
+      <img src="/favicon.png" width="112" height="58" alt="" />
     </a>
 
     <span
