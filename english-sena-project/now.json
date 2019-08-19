@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "name": "english-sena-project",
+  "alias": ["englishdynamic.now.sh", "englishdynamic"],
+  "public": true,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/images/(.*)",
+      "dest": "/images/$1",
+      "headers": {
+        "cache-control": "immutable, max-age=31536000"
+      }
+    },
+    {
+      "src": "/bundle.css",
+      "dest": "/bundle.css"
+    },
+    {
+      "src": "/global.css",
+      "dest": "/global.css"
+    },
+    {
+      "src": "/bundle.js",
+      "dest": "/bundle.js"
+    },
+    {
+      "src": "/favicon.png",
+      "dest": "/favicon.png"
+    },
+    {
+      "src": "/(.*)",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "/index.html"
+    }
+  ]
+}
