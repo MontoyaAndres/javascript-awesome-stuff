@@ -22,5 +22,5 @@ export function useTimer(startTimer) {
     return () => clearInterval(interval);
   }, [timer, startTimer]);
 
-  return { timer };
+  return { timer, setTimer };
 }

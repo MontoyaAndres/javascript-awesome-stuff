@@ -10,12 +10,11 @@ export function useScore(element) {
         setScore(score => score + 1);
       }
     }
-    setValue("");
   }, [value, element]);
 
   function handleChangeValue(value) {
     setValue(value);
   }
 
-  return { score, handleChangeValue };
+  return { score, setScore, handleChangeValue };
 }

@@ -1,15 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 
-const Section = styled.section`
-  margin-bottom: 40px;
-  background-color: #03a9f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 400px;
-`;
+import { Introduction, IntroductionSection, IntroductionTitle } from "./styles";
 
 export function Completed({ score, percent, length, handleTryAgain }) {
   let message = "";
@@ -23,20 +14,24 @@ export function Completed({ score, percent, length, handleTryAgain }) {
   }
 
   return (
-    <Section className="section">
-      <h3 className="title is-3">
-        You got {score} out of {length} Correct!
-      </h3>
-      <h1 className="title is-1">
-        {percent}% - {message}
-      </h1>
-      <h4 className="title is-4">Do you want to try again?</h4>
-      <button
-        className="button is-success is-large"
-        onClick={() => handleTryAgain()}
-      >
-        Try again!
-      </button>
-    </Section>
+    <IntroductionSection className="section">
+      <Introduction>
+        <IntroductionTitle className="title is-3">
+          You got {score} out of {length} Correct!
+        </IntroductionTitle>
+        <IntroductionTitle className="title is-1">
+          {percent}% - {message}
+        </IntroductionTitle>
+        <IntroductionTitle className="title is-4">
+          Do you want to try again?
+        </IntroductionTitle>
+        <button
+          className="button is-success is-large"
+          onClick={() => handleTryAgain()}
+        >
+          Try again!
+        </button>
+      </Introduction>
+    </IntroductionSection>
   );
 }

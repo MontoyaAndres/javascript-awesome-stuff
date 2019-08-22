@@ -12,8 +12,8 @@ export function GameLogic({ children, dataList, gameTitle }) {
 
   const currentElement = dataList[index];
 
-  const { score, handleChangeValue } = useScore(currentElement);
-  const { timer } = useTimer(startGame);
+  const { score, setScore, handleChangeValue } = useScore(currentElement);
+  const { timer, setTimer } = useTimer(startGame);
 
   useEffect(() => {
     // Time has finished
@@ -24,11 +24,12 @@ export function GameLogic({ children, dataList, gameTitle }) {
   }, [timer]);
 
   useEffect(() => {
-    // The game is completed, set the index to 0
+    // The game is completed, format all to its initial value
     if (gameCompleted) {
       setIndex(0);
+      setTimer(0);
     }
-  }, [gameCompleted]);
+  }, [gameCompleted, setTimer]);
 
   function handleNextElement() {
     // If is the last item, the game would be completed
@@ -40,10 +41,17 @@ export function GameLogic({ children, dataList, gameTitle }) {
     setIndex(index => index + 1);
   }
 
+  function handleStartGame() {
+    // If the user wants to play again, format the score value
+    if (score !== 0) {
+      setScore(0);
+    }
+
+    setStartGame(true);
+  }
+
   if (!startGame && !gameCompleted) {
-    return (
-      <Game handleStartGame={() => setStartGame(true)} title={gameTitle} />
-    );
+    return <Game handleStartGame={() => handleStartGame()} title={gameTitle} />;
   }
 
   if (gameCompleted) {

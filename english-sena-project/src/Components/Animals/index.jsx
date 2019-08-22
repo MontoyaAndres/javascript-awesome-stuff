@@ -1,17 +1,19 @@
 import React from "react";
 
-import { Section, QuestionColor, Option, OptionOrder } from "../styles";
+import { Section, QuestionImage, Option, OptionOrder } from "../styles";
 import { GameLogic } from "../../Container/GameLogic";
-import colorsList from "./data";
+import animalsList from "./data";
 
-export function Color() {
+export function Animals() {
   return (
-    <GameLogic dataList={colorsList} gameTitle="Colors">
+    <GameLogic dataList={animalsList} gameTitle="Animals">
       {({ timer, currentElement, handleChangeValue, handleNextElement }) => (
         <Section className="section">
           <h1 className="title">{timer} seconds</h1>
-          <QuestionColor style={{ backgroundColor: currentElement.color }} />
-          <h1 className="title">What color is this?</h1>
+          <QuestionImage
+            style={{ backgroundImage: `url(${currentElement.animal})` }}
+          />
+          <h1 className="title">What animal is this?</h1>
           <OptionOrder>
             {currentElement.options.map((option, i) => (
               <Option
@@ -19,7 +21,7 @@ export function Color() {
                 onClick={() => handleChangeValue(option)}
                 key={i}
               >
-                The color is {option}
+                The animal is {option}
               </Option>
             ))}
           </OptionOrder>
