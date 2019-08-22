@@ -42,9 +42,10 @@ export function GameLogic({ children, dataList, gameTitle }) {
   }
 
   function handleStartGame() {
-    // If the user wants to play again, format the score value
+    // If the user wants to play again, format values
     if (score !== 0) {
       setScore(0);
+      handleChangeValue("");
     }
 
     setStartGame(true);

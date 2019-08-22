@@ -6,6 +6,7 @@ export function useScore(element) {
 
   useEffect(() => {
     if (element) {
+      console.log(element.answer, value);
       if (element.answer === value) {
         setScore(score => score + 1);
       }
