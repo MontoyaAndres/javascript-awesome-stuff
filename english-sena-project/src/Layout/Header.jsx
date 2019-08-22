@@ -15,9 +15,11 @@ export function Header() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="/">
-          <img src="/favicon.png" width="112" height="58" alt="" />
-        </a>
+        <Link to="/" onClick={() => setIsMenuOpen(false)}>
+          <NavbarItem className="navbar-item">
+            <img src="/favicon.png" width="112" height="58" alt="" />
+          </NavbarItem>
+        </Link>
 
         <span
           onClick={() => setIsMenuOpen(!isMenuOpen)}
