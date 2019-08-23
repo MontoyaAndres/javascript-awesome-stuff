@@ -2,18 +2,20 @@ import React, { useState, useEffect } from "react";
 
 import { Game } from "../Components/Game";
 import { Completed } from "../Components/Completed";
-import { useScore } from "../utils/useScore";
 import { useTimer } from "../utils/useTimer";
 
 export function GameLogic({ children, dataList, gameTitle }) {
+  // the variable `index` is just for checking what element should the user response
   const [index, setIndex] = useState(0);
+  // the variable `score` is just for having a score when the user responses right
+  const [score, setScore] = useState(0);
+
+  // These are the variables for the status of the game
   const [startGame, setStartGame] = useState(false);
   const [gameCompleted, setGameCompleted] = useState(false);
 
-  const currentElement = dataList[index];
-
-  const { score, setScore, handleChangeValue } = useScore(currentElement);
   const { timer, setTimer } = useTimer(startGame);
+  const currentElement = dataList[index];
 
   useEffect(() => {
     // Time has finished
@@ -31,11 +33,16 @@ export function GameLogic({ children, dataList, gameTitle }) {
     }
   }, [gameCompleted, setTimer]);
 
-  function handleNextElement() {
+  function handleNextElement(userValue) {
     // If is the last item, the game would be completed
     if (index === dataList.length - 1) {
       setGameCompleted(true);
       setStartGame(false);
+    }
+
+    // If the `userValue` is equal to the current element, the score will increase
+    if (currentElement.answer === userValue) {
+      setScore(score => score + 1);
     }
 
     setIndex(index => index + 1);
@@ -43,11 +50,7 @@ export function GameLogic({ children, dataList, gameTitle }) {
 
   function handleStartGame() {
     // If the user wants to play again, format values
-    if (score !== 0) {
-      setScore(0);
-      handleChangeValue("");
-    }
-
+    setScore(0);
     setStartGame(true);
   }
 
@@ -71,7 +74,6 @@ export function GameLogic({ children, dataList, gameTitle }) {
   return children({
     timer,
     currentElement,
-    handleChangeValue,
     handleNextElement
   });
 }

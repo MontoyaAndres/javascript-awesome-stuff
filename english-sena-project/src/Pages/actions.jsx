@@ -1,16 +1,18 @@
 import React from "react";
 
 import { Description } from "../Components/Description";
+import { Actions } from "../Components/Actions";
 
 function ActionsGame() {
   return (
-    <Description
-      title="Actions Game"
-      description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
-  reprehenderit voluptatem error, eos distinctio pariatur velit, nobis minus
-  optio quaerat quia modi officia ex quisquam illo soluta blanditiis, alias
-  fuga!"
-    />
+    <>
+      <Description
+        title="Actions Game"
+        description="This game is about what's the meaning of the images and write it in the input. You have 30 seconds to respond, good luck!"
+      />
+
+      <Actions />
+    </>
   );
 }
 

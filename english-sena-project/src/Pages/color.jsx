@@ -8,10 +8,7 @@ function ColorGame() {
     <>
       <Description
         title="Color Game"
-        description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
-    reprehenderit voluptatem error, eos distinctio pariatur velit, nobis minus
-    optio quaerat quia modi officia ex quisquam illo soluta blanditiis, alias
-    fuga!"
+        description="This game is about what's the meaning of the images and select the right option. You have 30 seconds to respond, good luck!"
       />
 
       <Color />
