@@ -53,7 +53,7 @@ export function GameBySelect({ dataList, gameTitle, gameNickname }) {
                     onClick={() => handleChange(option)}
                     key={i}
                   >
-                    The fruit is {option}
+                    The {gameNickname} is {option}
                   </Option>
                 ))}
               </OptionOrder>
