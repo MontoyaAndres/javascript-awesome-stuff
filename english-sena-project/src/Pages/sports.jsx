@@ -1,18 +1,15 @@
 import React from "react";
 
-import { Description } from "../Components/Description";
-import { Sports } from "../Components/Sports";
+import { GameByInput } from "../Components/GameByInput";
+import data from "../data.json";
 
 function SportsGame() {
   return (
-    <>
-      <Description
-        title="Sports Game"
-        description="This game is about what's the meaning of the images and write it in the input. You have 30 seconds to respond, good luck!"
-      />
-
-      <Sports />
-    </>
+    <GameByInput
+      gameTitle="Sports"
+      gameNickname="sport"
+      dataList={data.sports}
+    />
   );
 }
 

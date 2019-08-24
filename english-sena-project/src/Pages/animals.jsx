@@ -1,18 +1,15 @@
 import React from "react";
 
-import { Description } from "../Components/Description";
-import { Animals } from "../Components/Animals";
+import { GameBySelect } from "../Components/GameBySelect";
+import data from "../data.json";
 
 function AnimalsGame() {
   return (
-    <>
-      <Description
-        title="Animals Game"
-        description="This game is about what's the meaning of the images and select the right option. You have 30 seconds to respond, good luck!"
-      />
-
-      <Animals />
-    </>
+    <GameBySelect
+      gameTitle="Animals"
+      gameNickname="animal"
+      dataList={data.animals}
+    />
   );
 }
 

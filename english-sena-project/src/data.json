@@ -1,0 +1,127 @@
+{
+  "actions": [
+    {
+      "action": "/images/play.png",
+      "answer": "play"
+    },
+    {
+      "action": "/images/cook.jpeg",
+      "answer": "cook"
+    },
+    {
+      "action": "/images/run.jpg",
+      "answer": "run"
+    },
+    {
+      "action": "/images/swim.jpg",
+      "answer": "swim"
+    },
+    {
+      "action": "/images/laugh.jpg",
+      "answer": "laugh"
+    }
+  ],
+  "animals": [
+    {
+      "animal": "/images/tiger.jpg",
+      "options": ["Tiger", "Elephant", "Bear", "Bird", "Horse"],
+      "answer": "Tiger"
+    },
+    {
+      "animal": "/images/elephant.jpg",
+      "options": ["Tiger", "Elephant", "Bear", "Bird", "Horse"],
+      "answer": "Elephant"
+    },
+    {
+      "animal": "/images/cat.jpeg",
+      "options": ["Tiger", "Elephant", "Cat", "Bird", "Horse"],
+      "answer": "Cat"
+    },
+    {
+      "animal": "/images/bird.jpg",
+      "options": ["Tiger", "Elephant", "Bear", "Bird", "Horse"],
+      "answer": "Bird"
+    },
+    {
+      "animal": "/images/horse.jpg",
+      "options": ["Tiger", "Elephant", "Bear", "Bird", "Horse"],
+      "answer": "Horse"
+    }
+  ],
+  "colors": [
+    {
+      "color": "blue",
+      "options": ["Red", "Blue", "Orange", "Green", "Magenta"],
+      "answer": "Blue"
+    },
+    {
+      "color": "yellow",
+      "options": ["Red", "Blue", "Yellow", "Green", "Magenta"],
+      "answer": "Yellow"
+    },
+    {
+      "color": "gray",
+      "options": ["Red", "Gray", "Orange", "Green", "Magenta"],
+      "answer": "Gray"
+    },
+    {
+      "color": "red",
+      "options": ["Red", "Blue", "Orange", "Green", "Magenta"],
+      "answer": "Red"
+    },
+    {
+      "color": "brown",
+      "options": ["Red", "Blue", "Orange", "Brown", "Magenta"],
+      "answer": "Brown"
+    }
+  ],
+  "fruits": [
+    {
+      "fruit": "/images/apple.jpg",
+      "options": ["Apple", "Pear", "Orange", "Strawberry", "Lemon"],
+      "answer": "Apple"
+    },
+    {
+      "fruit": "/images/pear.jpg",
+      "options": ["Apple", "Pear", "Orange", "Strawberry", "Lemon"],
+      "answer": "Pear"
+    },
+    {
+      "fruit": "/images/orange.jpg",
+      "options": ["Apple", "Pear", "Orange", "Strawberry", "Lemon"],
+      "answer": "Orange"
+    },
+    {
+      "fruit": "/images/strawberry.jpeg",
+      "options": ["Apple", "Pear", "Orange", "Strawberry", "Lemon"],
+      "answer": "Strawberry"
+    },
+    {
+      "fruit": "/images/lemon.jpg",
+      "options": ["Apple", "Pear", "Orange", "Strawberry", "Lemon"],
+      "answer": "Lemon"
+    }
+  ],
+  "sports": [
+    {
+      "sport": "/images/soccer.jpg",
+      "answer": "soccer"
+    },
+    {
+      "sport": "/images/basketball.jpg",
+      "answer": "basketball"
+    },
+    {
+      "sport": "/images/golf.jpg",
+      "answer": "golf"
+    },
+    {
+      "sport": "/images/tennis.jpg",
+      "answer": "tennis"
+    },
+    {
+      "sport": "/images/swimming.jpg",
+      "answer": "swimming"
+    }
+  ]
+}
