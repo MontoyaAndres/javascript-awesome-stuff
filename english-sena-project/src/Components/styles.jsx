@@ -49,14 +49,12 @@ const Option = styled.button`
 
   &:hover {
     background-color: #e53935;
-    color: white;
   }
 
   &:visited,
   &:focus,
   &:active {
     background-color: #8bc34a;
-    color: white;
   }
 
   @media (max-width: 1024px) {
