@@ -3,14 +3,14 @@ import React from "react";
 import { Introduction, IntroductionSection, IntroductionTitle } from "./styles";
 
 export function Completed({ score, percent, length, handleTryAgain }) {
-  let message = "";
+  let message = window.localStorage.getItem("nickname");
 
   if (percent > 80) {
-    message = "Awesome Work!";
+    message += " Awesome Work!";
   } else if (percent <= 80 && percent >= 60) {
-    message = "You did it well!";
+    message += " You did it well!";
   } else {
-    message = "Not Good!";
+    message += " Not Good!";
   }
 
   return (

@@ -9,7 +9,7 @@ const NavbarItem = styled.span`
   }
 `;
 
-export function Header() {
+export function Header({ isAuth, removeAuth }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -68,6 +68,20 @@ export function Header() {
               </Link>
             </div>
           </div>
+
+          {isAuth && (
+            <div className="navbar-item has-dropdown is-hoverable">
+              <span className="navbar-link">
+                {window.localStorage.getItem("nickname")}
+              </span>
+
+              <div className="navbar-dropdown">
+                <NavbarItem className="navbar-item" onClick={removeAuth}>
+                  Sign out
+                </NavbarItem>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </nav>
