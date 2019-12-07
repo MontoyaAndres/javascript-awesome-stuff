@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "build": {
+    "env": {
+      "EMAIL": "andresmontoyafcb@gmail.com",
+      "PASSWORD": "SpyRock@Dios@AndresMontoyaFCBLuna",
+      "NODE_ENV": "production"
+    }
+  },
+  "env": {
+    "EMAIL": "andresmontoyafcb@gmail.com",
+    "PASSWORD": "SpyRock@Dios@AndresMontoyaFCBLuna"
+  }
+}
