@@ -17,19 +17,24 @@ const transporter = nodemailer.createTransport({
 export default (req: NextApiRequest, res: NextApiResponse) => {
   const values = req.body;
 
-  transporter.sendMail({
-    from: values.email,
-    to: account.email,
-    subject: `${values.name} requiere de un servicio.`,
-    html: `
-Nombre: ${values.name}<br>
-Email: ${values.email}<br>
-Teléfono: ${values.telephone}<br>
-<br>
-
-<p>${values.description}</p>
-    `
-  });
+  try {
+    transporter.sendMail({
+      from: values.email,
+      to: account.email,
+      subject: `${values.name} requiere de un servicio.`,
+      html: `
+  Nombre: ${values.name}<br>
+  Email: ${values.email}<br>
+  Teléfono: ${values.telephone}<br>
+  <br>
+  
+  <p>${values.description}</p>
+      `
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ response: false });
+  }
 
   res.status(200).json({ response: true });
 };
