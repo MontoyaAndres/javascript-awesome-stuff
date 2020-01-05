@@ -1,0 +1,28 @@
+{
+  "name": "carga-logistica",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^9.1.6",
+    "nodemailer": "^6.4.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "smooth-scroll-into-view-if-needed": "^1.1.25",
+    "styled-components": "^4.4.1"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "@types/isomorphic-fetch": "^0.0.35",
+    "@types/node": "^13.1.2",
+    "@types/nodemailer": "^6.4.0",
+    "@types/react": "^16.9.17",
+    "@types/styled-components": "^4.4.1",
+    "typescript": "^3.7.4"
+  }
+}
