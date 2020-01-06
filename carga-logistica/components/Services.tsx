@@ -4,9 +4,9 @@ import styled from "styled-components";
 const Title = styled.h2`
   color: #677282;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
-  padding: 2em;
+  padding: 2em 0;
   margin: 0;
 
   @media (min-width: 768px) {
